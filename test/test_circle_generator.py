@@ -1,7 +1,8 @@
-# -*- coding: utf-8 -*-
-"""Circle_generator.CircleGeneratorのテスト.
+
+"""circle_generator.CircleGeneratorのテスト.
 Circle2Imgのテストも兼ねる.
-Created on Fri May 17 19:07:53 2024
+Created on Wed May 22 12:16:58 2024
+>>>>>>> Stashed changes
 
 @author: AB21074
 """
