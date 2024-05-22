@@ -58,6 +58,11 @@ class Circle2Img(Param2Img):
         draw = self.draw if target is None else target
         center = param[5:7]
         radius = param[7]
+        
+        start_corner = [center[0] - radius, center[1] + radius]
+        end_corner = [center[0] + radius, center[1] - radius]
 
-        xy = self.convert_cood((center[0] - radius, center[1] - radius)), self.convert_cood((center[0] + radius, center[1] + radius))
-        draw.ellipse(xy, outline=color, width=lineweight)
+
+        xy = self.convert_cood(start_corner), self.convert_cood(end_corner)
+        draw.ellipse(xy, fill=None, outline=(0, 0, 0))
+        

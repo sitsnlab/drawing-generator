@@ -8,7 +8,7 @@ class CircleGenerater(ParamGenerator):
         """イニシャライザ."""
         super().__init__(drawing_size)
     
-    def gen_circles(self, size: int = 1):
+    def gen_ent(self, size: int = 1):
         """任意サイズの円の中心と半径を生成する."""
         centers = self.gen_cord(size)
         radii = np.zeros(size)
