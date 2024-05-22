@@ -40,6 +40,3 @@ if __name__ == '__main__':
     c2i = Circle2Img(img_size=size)
     c2i.draw_imgs(params, directry)
 
-    # 画像作成
-    c2i = Circle2Img(img_size=size)
-    c2i.draw_imgs(params, directry)
