@@ -1,8 +1,9 @@
 
+
 """circle_generator.CircleGeneratorのテスト.
 Circle2Imgのテストも兼ねる.
 Created on Wed May 22 12:16:58 2024
->>>>>>> Stashed changes
+
 
 @author: AB21074
 """
@@ -27,14 +28,15 @@ if __name__ == '__main__':
 
     # パラメータ作成
     cg = CircleGenerater()
-    circles = cg.gen_circles(ent_num)
+    circles = cg.gen_ent(ent_num)
+
 
     CsvIO.write_csv(circles, csvpath)  # CSV保存
     params = CsvIO.read_csv(csvpath)  # 読み込み
 
     print(params.shape)
 
-
     # 画像作成
     c2i = Circle2Img(img_size=size)
     c2i.draw_imgs(params, directry)
+
