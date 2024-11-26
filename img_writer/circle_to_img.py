@@ -65,4 +65,4 @@ class Circle2Img(Param2Img):
 
         xy = self.convert_cood(start_corner), self.convert_cood(end_corner)
         draw.ellipse(xy, fill=None, outline=(0, 0, 0))
-        
+
