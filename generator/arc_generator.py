@@ -40,7 +40,7 @@ class ArcGenerator(ParamGenerator):
         i = 0
         skip = 1
         for i in range(size):
-            radius[i] = self.rng.random() * self.sizeX
+            radius[i] = self.rng.random() * m.sqrt(self.sizeX**2 + self.sizeY**2)
             
             angle = start_angle[i]
             while angle <= end_angle[i]:
